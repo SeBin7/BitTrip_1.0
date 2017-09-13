@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BitUserDAO">
+	
+	<resultMap id="userResult" type="user">
+		<id property="user_id" column="USER_ID" />
+		<result property="email" column="EMAIL" />
+		<result property="password" column="PASSWORD" />
+		<result property="name" column="NAME" />
+		<result property="gender" column="GENDER" />
+	</resultMap>
+	
+	<select id="loginUser" parameterType="user" resultType="user">
+		<![CDATA[
+			SELECT * FROM BITUSER
+			WHERE EMAIL = #{email} 
+			AND PASSWORD = #{password}
+		]]>
+		
+	</select>
+	
+</mapper>
