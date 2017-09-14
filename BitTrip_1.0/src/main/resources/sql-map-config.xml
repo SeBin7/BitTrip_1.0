@@ -6,10 +6,12 @@
 	<!-- Alias 설정  -->
 	<typeAliases>
 		<typeAlias alias="user" type="com.bittrip.pro.user.BitUserVO" />
+		<typeAlias alias="post" type="com.bittrip.pro.post.BitPostVO" />
 	</typeAliases>
-	
+
 	<!-- Sql Mapper 설정 -->
 	<mappers>
 		<mapper resource="mappings/user-mapping.xml" />
+		<mapper resource="mappings/post-mapping.xml" />
 	</mappers>
 </configuration>

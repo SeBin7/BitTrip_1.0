@@ -3,7 +3,7 @@
 
 <mapper namespace="BitUserDAO">
 	
-	<resultMap id="userResult" type="user">
+ 	<resultMap id="userResult" type="user">
 		<id property="user_id" column="USER_ID" />
 		<result property="email" column="EMAIL" />
 		<result property="password" column="PASSWORD" />

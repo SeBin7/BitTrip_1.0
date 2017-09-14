@@ -38,7 +38,7 @@ public class BitLoginController {
 
 			session.setAttribute("userName", user.getName());
 
-			return "index.jsp";
+			return "getPost.do";
 
 		} else {
 
