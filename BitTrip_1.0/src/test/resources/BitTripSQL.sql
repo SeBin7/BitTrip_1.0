@@ -32,7 +32,7 @@ create table BitTripDay(
 
 create table BitDayLocation(
 	post_id_day	varchar2(8) CONSTRAINT FK_BitDayLocation references BitTripDay(post_id_day),
-	location	varchar2(20),
+	location	varchar2(100),
 	sort		number(5)
 );
 
@@ -55,11 +55,22 @@ insert into BitPosts values(posts_sequence.nextval, 'xie11a', 'sung', '상해가
 insert into BitTripDay values(1, '1_1day', '1일차 짱짱맨');
 insert into BitTripDay values(1, '1_2day', '2일차 짱짱맨');
 insert into BitTripDay values(1, '1_3day', '3일차 짱짱맨');
-insert into BitDayLocation values('1_1day', '1일차 이곳1', 1);
+insert into BitDayLocation values('1_1day', '중국상하이 시푸둥 신구S1迎宾高速상하이 푸둥 국제공항', 1);
 insert into BitDayLocation values('1_1day', '1일차 이곳2', 2);
 insert into BitDayLocation values('1_2day', '2일차 이곳1', 2);
 insert into BitDayLocation values('1_2day', '2일차 이곳2', 1);
 insert into BitDayLocation values('1_3day', '3일차 이곳1', 1);
+
+
+Alert table BitDayLocation modify(location varchar2(50));
+
+
+alter table BITPOSTS add(location varchar2(100));
+alter table BITPOSTS add(content varchar2(1000));
+
+update BITPOSTS set location = '중국상하이 시푸둥 신구S1迎宾高速상하이 푸둥 국제공항';
+update BITPOSTS set content = '상해에서 재밌게 놀껀디';
+
 
 
 

@@ -12,7 +12,7 @@
 	<center>
 		<h1>${userName}님환영합니다</h1>
 		<a href="login.do">로그인 가자~</a><br>
-		<a href="index.do">인덱스 가자~</a>
+		<a href="main.do">메인 가자~</a>
 		<h1>${myData}</h1>
 		<hr>
 		<table border=2>

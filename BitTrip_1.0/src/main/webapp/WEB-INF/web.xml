@@ -41,7 +41,7 @@
 	</listener>
 
 	<welcome-file-list>
-		<welcome-file>index.do</welcome-file>
+		<welcome-file>newsfeed.do</welcome-file>
 	</welcome-file-list>
 
 

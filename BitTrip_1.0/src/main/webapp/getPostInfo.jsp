@@ -25,8 +25,8 @@
 					<td>${postInfo.post_id}</td>
 					<td>${postInfo.name}</td>
 					<td>${postInfo.title}</td>
-					<td>${postInfo.content }</td>
-					<td>${postInfo.location }</td>
+					<td>${postInfo.contentList }</td>
+					<td>${postInfo.locationList }</td>
 				</tr>
 
 		</table>

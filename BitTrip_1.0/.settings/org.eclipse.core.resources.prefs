@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
 encoding//src/main/java/com/bittrip/view/user/BitLoginController.java=UTF-8
 encoding//src/main/webapp/login.jsp=UTF-8
+encoding//src/main/webapp/main.jsp=UTF-8
+encoding//src/main/webapp/write.jsp=UTF-8
 encoding//src/test/java/com/springbook/biz/user/UserServiceClient.java=UTF-8

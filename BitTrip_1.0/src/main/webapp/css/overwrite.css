@@ -406,10 +406,10 @@ dd {
 
 .dl-horizontal dt {
   float: left;
-  width: 160px;
+  width: 100px;
   overflow: hidden;
   clear: left;
-  text-align: right;
+  text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
